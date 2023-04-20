@@ -15,7 +15,7 @@ export const Root = () => {
                     <p className="Root-p"> { paragraph } </p>
                     <a href="#" className="Root-a" title={ btn }> { btn } </a>
                 </section>
-                <img src="./assets/root.webp" alt="" className="Root-img" />
+                <img src="./assets/root.webp" alt={ title } className="Root-img" />
             </div>
         </div>
     )

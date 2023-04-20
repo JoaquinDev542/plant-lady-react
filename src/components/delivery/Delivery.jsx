@@ -15,7 +15,7 @@ export const Delivery = () => {
                     <p className="Delivery-p"> { paragraph } </p>
                     <a className="Delivery-a" href="#" title={ btn }> { btn } </a>
                 </section>
-                <img src="./assets/delivery.webp" alt="" className="Delivery-img" />
+                <img src="./assets/delivery.webp" alt={ title } className="Delivery-img" />
             </div>
            
         </div>

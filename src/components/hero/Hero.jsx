@@ -15,7 +15,7 @@ export const Hero = () => {
                     <p className="Hero-p"> { paragraph } </p>
                     <a href="#" className="Hero-a" title={ btn }> { btn } </a>
                 </section>
-                <img src="./assets/hero.webp" alt="" className="Hero-img" />
+                <img src="./assets/hero.webp" alt={ title } className="Hero-img" />
             </div>
         </div>
     )
