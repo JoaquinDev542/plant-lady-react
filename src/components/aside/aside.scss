@@ -1,0 +1,41 @@
+@use "../../sass/variables";
+
+.Aside {
+    padding: var(--padding-products-h) var(--padding-h);
+    max-width: var(--max-width);
+    margin: 0 auto;
+    display: grid;
+    grid-template-areas:
+    "Aside--First Aside--Second"
+    "Aside--Third Aside--Fourth";
+    grid-template-columns: repeat(2 , 1fr);
+    grid-template-rows: repeat( 2 , 1fr);
+    gap: clamp(2rem , 5vw , 4rem);
+    @media screen and (min-width:1024px){
+        grid-template-areas: "Aside--First  Aside--Second Aside--Third Aside--Fourth";
+        grid-template-columns: repeat(4 , 1fr);
+        grid-template-rows: auto;
+    }
+    &-box {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+        &--First {
+            grid-area: Aside--First;
+        }
+        &--Second {
+            grid-area: Aside--Second;
+        }
+        &--Third {
+            grid-area: Aside--Third;
+        }
+        &--Fourth {
+            grid-area: Aside--Fourth;
+        }
+    }
+    &-img {
+        width: clamp(3.125rem , 5vw , 6rem);
+        margin: 0 auto;
+    }
+}

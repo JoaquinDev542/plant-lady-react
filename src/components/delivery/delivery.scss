@@ -1,0 +1,57 @@
+@use "../../sass/variables";
+
+.Delivery {
+    min-height: 550px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--pink);
+    padding: 0 var(--padding-h);
+    &-width {
+        display: grid;
+        grid-template-areas: 
+        "Delivery-img"
+        "Delivery-section";
+        grid-template-rows: repeat(2 , auto);
+        max-width: var(--max-width);
+        margin: 0 auto;
+        padding: 0 0 2.5rem 0;
+        @media screen and (min-width:768px){
+            justify-content: center;
+            align-items: center;
+            grid-template-areas:
+            "Delivery-section Delivery-img";
+            grid-template-columns: repeat(2 , 1fr);
+            padding: 0;
+        }
+    }
+
+    &-section {
+        grid-area: Delivery-section;
+        display: flex;
+        flex-direction: column;
+        gap: 1.25rem;
+    }
+
+    &-h2 {
+        font-size: var(--fs-intros);
+    }
+
+    &-a {
+        display: inline-block;
+        width: max-content;
+        padding: 0.75rem 2rem;
+        border-radius: 1.25rem;
+        text-decoration: none;
+        color: var(--white);
+        background-color: var(--black);
+    }
+
+    &-img {
+        grid-area: Delivery-img;
+        width: 400px;
+        margin: 0 auto;
+    }
+
+}
