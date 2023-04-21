@@ -1,23 +1,17 @@
 import { useContext } from "react";
 import { GlobalContext } from "../../provider/Provider";
+import { Information } from "../information/Information";
 import "./delivery.scss"
 
 export const Delivery = () => {
     const { main } = useContext(GlobalContext)
     const { delivery } = main
-    const { title , paragraph , btn } = delivery
+    const { title , paragraph } = delivery
 
     return (
         <div className="Delivery">
-            <div className="Delivery-width">
-                <section className="Delivery-section">
-                    <h2 className="Delivery-h2"> { title } </h2>
-                    <p className="Delivery-p"> { paragraph } </p>
-                    <a className="Delivery-a" href="#" title={ btn }> { btn } </a>
-                </section>
-                <img src="./assets/delivery.webp" alt={ title } className="Delivery-img" />
-            </div>
-           
+            <Information classDiv="Delivery-width" classSection="Delivery-section" classH2="Delivery-h2" textH2={ title } classP="Delivery-p" textP={ paragraph } src="./assets/delivery.webp" classImg="Delivery-img" classA="Delivery-a" href="#" textA="How we Delivery"/>
         </div>
     )
 }
+

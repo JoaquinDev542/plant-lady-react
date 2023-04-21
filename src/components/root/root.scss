@@ -9,14 +9,9 @@
     background-color: var(--gray);
     padding: 0 var(--padding-h);
     &-width {
-        display: grid;
         grid-template-areas: 
         "Root-img"
         "Root-section";
-        grid-template-rows: repeat(2 , auto);
-        max-width: var(--max-width);
-        margin: 0 auto;
-        padding: 0 0 2.5rem 0;
         @media screen and (min-width:768px){
             justify-content: center;
             align-items: center;
@@ -26,32 +21,11 @@
             padding: 0;
         }
     }
-
     &-section {
         grid-area: Root-section;
-        display: flex;
-        flex-direction: column;
-        gap: 1.25rem;
     }
-
-    &-h2 {
-        font-size: var(--fs-intros);
-    }
-
-    &-a {
-        display: inline-block;
-        width: max-content;
-        padding: 0.75rem 2rem;
-        border-radius: 1.25rem;
-        text-decoration: none;
-        color: var(--white);
-        background-color: var(--black);
-    }
-
     &-img {
         grid-area: Root-img;
-        width: 400px;
-        margin: 0 auto;
         @media screen and (min-width:768px){
             margin: 0;
         }

@@ -90,16 +90,46 @@
     }
 
     &-link {
+        position: relative;
         text-decoration: none;
         color: inherit;
+        &::before {
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 0;
+            height: 1px;
+            background-color: var(--black);
+            content: "";
+            transition: .2s width;
+        }
     }
 
     &-navContainerLink {
+        position: relative;
         display: flex;
         align-items: center;
         gap: .5rem;
         text-decoration: none;
         color: var(--black);
+        &::before {
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 0;
+            height: 1px;
+            background-color: var(--black);
+            content: "";
+            transition: .2s width;
+        }
     }
 
+}
+
+.Header-link:hover::before {
+   width: 100%;
+}
+
+.Header-navContainerLink:hover::before {
+    width: 100%;
 }

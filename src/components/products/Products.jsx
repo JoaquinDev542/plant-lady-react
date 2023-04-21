@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import { GlobalContext } from "../../provider/Provider";
+import { Buttons } from "../buttons/Buttons";
 import "./products.scss"
 
 export const Products = () => {
@@ -24,7 +25,7 @@ const Cards = () => {
                     <img src={ src } alt={ title } className="Products-img" />
                     <div className="Products-padding">
                         <span className="Products-title"> { title } </span>
-                        <a href="#" title={ btn } className="Products-link"> { btn } </a>
+                        <Buttons href="#" className="Products-link" text="Shop Now" title="Shop Now"/>
                     </div>
                 </div>
             ) }

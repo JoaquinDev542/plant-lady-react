@@ -1,22 +1,16 @@
 import { useContext } from "react";
 import { GlobalContext } from "../../provider/Provider";
+import { Information } from "../information/Information";
 import "./root.scss"
 
 export const Root = () => {
     const { main } = useContext(GlobalContext)
     const { root } = main
-    const { title , paragraph , btn } = root
+    const { title , paragraph } = root
 
     return (
         <div className="Root">
-            <div className="Root-width">
-                <section className="Root-section">
-                    <h2 className="Root-h2"> { title } </h2>
-                    <p className="Root-p"> { paragraph } </p>
-                    <a href="#" className="Root-a" title={ btn }> { btn } </a>
-                </section>
-                <img src="./assets/root.webp" alt={ title } className="Root-img" />
-            </div>
+            <Information classDiv="Root-width" classSection="Root-section" classH2="Root-h2" textH2={ title } classP="Root-p" textP={ paragraph } src="./assets/root.webp" classImg="Root-img" classA="Root-a" href="#" textA="Our Story"/>
         </div>
     )
 }

@@ -1,22 +1,16 @@
 import { useContext } from "react";
 import { GlobalContext } from "../../provider/Provider";
+import { Information } from "../information/Information";
 import "./hero.scss"
 
 export const Hero = () => {
     const { main } = useContext(GlobalContext)
     const { hero } = main
-    const { title , paragraph , btn } = hero
+    const { title , paragraph } = hero
 
     return (
         <div className="Hero">
-            <div className="Hero-width">
-                <section className="Hero-section">
-                    <h2 className="Hero-h2"> { title } </h2>
-                    <p className="Hero-p"> { paragraph } </p>
-                    <a href="#" className="Hero-a" title={ btn }> { btn } </a>
-                </section>
-                <img src="./assets/hero.webp" alt={ title } className="Hero-img" />
-            </div>
+            <Information classDiv="Hero-width" classSection="Hero-section" classH2="Hero-h2" textH2={ title } classP="Hero-p" textP={ paragraph } src="./assets/hero.webp" classImg="Hero-img" classA="Hero-a" href="#" textA="Shop Now" />
         </div>
     )
 }

@@ -15,23 +15,20 @@ const bbdd = {
         hero : {
             title : "Locally sourced in Atlanta, GA" ,
             paragraph : "Plant Lady Juice Co. sources product ingredients from our garden and network of Georgia farmers. In addition to our libations, we provide wellness services, including our singature Wholistics Consultation." , 
-            btn : "Shop Now" ,
         },
         root : {
             title : "Deeply Rooted" , 
             paragraph : "Roots are the lifeline of plants. Roots absorb vital nutrients which nourish our bodies. In the same respect, Plant Lady Juice Co. Knows that staying deeply rooter harmonizes the journey to self-actualization." , 
-            btn : "Our Story" ,
         },
         delivery : {
             title : "Delivery Guideliness" ,
             paragraph : "We deliver throughout the metro-Atlanta area. Learn more about our local delivery locations and weekly schedule." ,
-            btn : "How we Deliver",
         },
     },
 
     products : [
-        { id : uuidv4() , title : "Juice Sample Pack" , btn : "Shop Now" , src : "./assets/products-juice.webp" },
-        { id : uuidv4() , title : "Tea Sample Pack" , btn : "Shop Now" , src : "./assets/products-tea.webp" },
+        { id : uuidv4() , title : "Juice Sample Pack" , src : "./assets/products-juice.webp" },
+        { id : uuidv4() , title : "Tea Sample Pack" , src : "./assets/products-tea.webp" },
     ],
 
     testimonials : [
