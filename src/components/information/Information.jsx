@@ -5,7 +5,6 @@ export const Information = ({classDiv ,classSection , classH2 , textH2 , classP 
             gridTemplateRows: "repeat(2 , auto)",
             maxWidth: "1300px",
             margin: "0 auto",
-           
         },
         section : {
             display: "flex",

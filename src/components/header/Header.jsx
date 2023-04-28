@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { GlobalContext } from "../../provider/Provider";
 import "./header.scss"
+import { Link } from "react-router-dom";
 
 export const Header = () => {
     return (
@@ -54,9 +55,9 @@ const Nav = () => {
     return (
         <nav className="Header-nav">
             <ul className="Header-ul">
-                { header.map( ( { id , title , href } ) =>
+                { header.map( ( { id , title } ) =>
                     <li key={ id } className="Header-li">
-                        <a href={ href } className="Header-link"> { title } </a>
+                        <a href={ title } className="Header-link"> { title } </a>
                     </li>
                 ) }
             </ul>
