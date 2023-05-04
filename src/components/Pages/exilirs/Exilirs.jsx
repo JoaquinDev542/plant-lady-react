@@ -2,14 +2,12 @@ import { useContext } from "react";
 import { GlobalContext } from "../../../provider/Provider";
 import { TitleContent } from "../../titleContent/TitleContent"
 
-export const Collections = () => {
+export const Exilirs = () => {
     const { titleContent } = useContext(GlobalContext)
-    const { collections } = titleContent
-    const { h2 , p } = collections
+    const { exilirs } = titleContent
+    const { h2 , p } = exilirs
 
     return(
-        <div className="Collections">
-            <TitleContent textH2={ h2 } textP={ p }/>    
-        </div>
+        <TitleContent textH2={ h2 } textP={ p }/>    
     )
 } 

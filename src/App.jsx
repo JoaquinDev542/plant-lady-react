@@ -5,7 +5,7 @@ import { AllProducts } from "./components/Pages/allProducts/AllProducts"
 import { Cleanses } from "./components/Pages/cleanses/Cleanses"
 import { Collections } from "./components/Pages/collections/Collections"
 import { DeliveryPage } from "./components/Pages/deliveryPage/DeliveryPage"
-import { Elixirs } from "./components/Pages/elixirs/Elixirs"
+import { Exilirs } from "./components/Pages/exilirs/Exilirs"
 import { Juices } from "./components/Pages/juices/Juices"
 import { Kits } from "./components/Pages/kits/Kits"
 import { Services } from "./components/Pages/services/Services"
@@ -14,6 +14,7 @@ import { Header } from "./components/header/Header"
 import { Menu } from "./components/menu/Menu"
 import { Footer } from "./components/footer/Footer"
 import { NotFound } from "./components/Pages/notFound/NotFound"
+import { CartPage } from "./components/Pages/cart/Cart"
 
 
 function App() {
@@ -21,8 +22,8 @@ function App() {
   return (
     <div className="App">
       <Menu/>
-      <Header/>
       <BrowserRouter>
+        <Header/>
         <Routes>
           <Route path="/" element={ <Home/> }/>
           <Route path="/about" element={ <AboutUs/> }/>
@@ -30,11 +31,12 @@ function App() {
           <Route path="/cleanses" element={ <Cleanses/> }/>
           <Route path="/collections" element={ <Collections/> }/>
           <Route path="/delivery" element={ <DeliveryPage/> }/>
-          <Route path="/elixirs" element={ <Elixirs/> }/>
+          <Route path="/exilirs" element={ <Exilirs/> }/>
           <Route path="/juices" element={ <Juices/> }/>
           <Route path="/kits" element={ <Kits/> }/>
           <Route path="/services" element={ <Services/> }/>
           <Route path="/teas" element={ <Teas/> }/>
+          <Route path="/cart" element={ <CartPage/> }/>
           <Route path="*" element={ <NotFound/> }/>
         </Routes>
       </BrowserRouter>

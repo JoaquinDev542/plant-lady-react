@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 export const Information = ({classDiv ,classSection , classH2 , textH2 , classP , textP , src , classImg , classA , textA , href}) => {
     const stylesInformation = {
         div : {
@@ -34,7 +35,7 @@ export const Information = ({classDiv ,classSection , classH2 , textH2 , classP 
             <section style={stylesInformation.section} className={ classSection }>
                 <h2 style={stylesInformation.h2} className={classH2}>{textH2}</h2>
                 <p className={classP}>{textP}</p>
-                <a style={stylesInformation.a} href={ href } title={ textA } className={ classA }>{ textA }</a>
+                <Link style={stylesInformation.a} to={ href } title={ textA } className={ classA }>{ textA }</Link>
             </section>
             <img style={stylesInformation.img} className={ classImg } src={ src } alt={ textH2 }/>
         </div>

@@ -55,6 +55,37 @@ const bbdd = {
         { id : uuidv4() , title : "Cancellation & Refund Policy" , href : "#" },
         { id : uuidv4() , title : "Disclaimer" , href : "#" },
     ],
+
+    titleContent : {
+        juices : {
+            h2 : "Juices",
+            p  : "Our 16 oz juices are handcrafted to support hydration, immunity, proper digestion and more.",
+        },
+        teas : {
+            h2 : "Teas",
+            p  : "Our 16 oz herbal teas are infused with homegrown herbal blends that stimulate your senses and harmonize your day.",
+        },
+        exilirs : {
+            h2 : "Exilirs",
+            p  : "Our 4 oz elixirs are powerful tonics that ignite the wellness power within.",
+        },
+        cleanses : {
+            h2 : "Cleanses",
+            p  : "Our Deeply Rooted ™ cleanses were intentionally cultivated with you in mind. Pick your choice of a 1, 3, or 5 day cleanse!",
+        },
+        kits : {
+            h2 : "Kits",
+            p  : "Not sure which libation to try first? Then try all of them!",
+        },
+        services : {
+            h2 : "Services",
+            p  : "Want to have us take an in-depth look at what your body is saying? Want to offer Plant Lady Juice Co. products at your event? Or, want to place an order of 12 or more of the same product? We can help.",
+        },
+        collections : {
+            h2 : "All Products",
+            p  : "Our juices, teas, and elixirs are made with love, and with ancestral wisdom, to care for your mind, body, and spirit.",
+        },
+    },
 }
 
 export const GlobalContext = createContext()

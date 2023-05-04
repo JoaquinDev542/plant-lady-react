@@ -10,7 +10,7 @@ export const Root = () => {
 
     return (
         <div className="Root">
-            <Information classDiv="Root-width" classSection="Root-section" classH2="Root-h2" textH2={ title } classP="Root-p" textP={ paragraph } src="./assets/root.webp" classImg="Root-img" classA="Root-a" href="#" textA="Our Story"/>
+            <Information classDiv="Root-width" classSection="Root-section" classH2="Root-h2" textH2={ title } classP="Root-p" textP={ paragraph } src="./assets/root.webp" classImg="Root-img" classA="Root-a" href="about" textA="Our Story"/>
         </div>
     )
 }
