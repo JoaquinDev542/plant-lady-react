@@ -1,5 +1,27 @@
-export const CartPage = () => {
+import { Link } from "react-router-dom"
+import { Title } from "../../title/Title"
+
+export const CartPage= () => {
     return(
-        <h1>CartPage</h1>      
+        <div className="DeliveryPage">
+            <Title textH2="Shopping Cart"/>
+            <EmptyContent/>
+        </div>    
     )
 } 
+
+const EmptyContent = () => {
+    return (
+        <div className="EmptyContent">
+            <p className="EmptyContent-p">Your cart is currently empty.</p>
+            <Link to="/products" className="EmptyContent-link">Continue browsing</Link>
+        </div>
+    )
+} 
+
+const ZipCode = () => {
+    return (
+        <p>completar</p>
+    )
+}
+

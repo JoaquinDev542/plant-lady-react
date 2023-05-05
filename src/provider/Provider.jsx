@@ -24,6 +24,14 @@ const bbdd = {
             title : "Delivery Guideliness" ,
             paragraph : "We deliver throughout the metro-Atlanta area. Learn more about our local delivery locations and weekly schedule." ,
         },
+        wholistic : {
+            title : "Wholistic Consultation",
+            paragraph : "Our Plant Lady, Akilah Cherri, will provide in-person or virtual consultations. By analyzing the current state of your body, she will provide tailored advice on how to optimize your wellness. If you desire, Akilah will customize herbal products based on what she learns.",
+        },
+        orders : {
+            title : "Catering Services & Bulk Orders",
+            paragraph : "For catering, there’s a $500 minimum; We need 30 days' notice for catering requests. For bulk orders of 12 or more of the same product(s), we need 14 days' notice to get the ingredients and make your order.",
+        },
     },
 
     products : [
@@ -86,6 +94,11 @@ const bbdd = {
             p  : "Our juices, teas, and elixirs are made with love, and with ancestral wisdom, to care for your mind, body, and spirit.",
         },
     },
+
+    aboutUs : [
+        { id : uuidv4() , name : "Akilah Cherri" , work : "CEO/ co-Founder" , paragraph : "is an Atlanta, GA based plant medicine woman, agriculturalist, elementary school teacher and urban farmer. In the summer of 2018, Akilah began her formal education in wholistic healing as a student at The Wild Ginger Herbal Center in Manzanillo, Costa Rica. Once she returned from Costa Rica, she studied with the late Dr. Lialia Afrika and Queen Afua. From 2013-2019, Akilah was an Agricultural Fellow at HABESHA Inc: an Atlanta/Ghana based, Pan-African, community-farming organization. As an Agricultural Fellow, she studied urban organic agriculture, sustainable energy technology and green living." , src : "../../assets/akilah-cherri.webp" , classDiv : "PersonInformationContainer PersonInformationContainer--first" },
+        { id : uuidv4() , name : "Jennifer Kanyange" , work : "CEO/ co-Founder" , paragraph : "is a proud resident of West Atlanta, GA. She has spent her multi-faceted global career in strategic operations working with world renowned product development teams, creatives, designers and policy makers. Currently, Jennifer is Senior Director, Project Management and Execution at a leading national non-profit focused on education and workforce development transformation across America. Throughout her career, she has held leadership roles at Twitter, Slack and Nike. For Jennifer, Plant Lady Juice Co. is an extension of the rich history of agriculture that is part of her East African heritage." , src : "/../../assets/jennifer-kanyage.webp" , classDiv : "PersonInformationContainer PersonInformationContainer--second" },
+    ],
 }
 
 export const GlobalContext = createContext()

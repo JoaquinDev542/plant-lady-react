@@ -1,0 +1,33 @@
+@use "../../sass/variables";
+
+.Wholistic {
+    min-height: 550px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--gray);
+    padding: 0 var(--padding-h);
+    &-width {
+        padding: 0 0 2.5rem 0;
+        grid-template-areas: 
+        "Wholistic-img"
+        "Wholistic-section";
+        @media screen and (min-width:768px){
+            justify-content: center;
+            align-items: center;
+            grid-template-areas:
+            "Wholistic-img Wholistic-section";
+            grid-template-columns: repeat(2 , 1fr);
+            padding: 0;
+        }
+    }
+
+    &-section {
+        grid-area: Wholistic-section;
+    }
+    &-img {
+        margin: 0 auto;
+        grid-area: Wholistic-img;
+    }
+}
