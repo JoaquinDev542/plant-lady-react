@@ -3,12 +3,12 @@ import { createContext } from "react";
 
 const bbdd = {
     header : [
-        { id: uuidv4() , href : "#" , title : "Juices" },
-        { id: uuidv4() , href : "#" , title : "Teas" },
-        { id: uuidv4() , href : "#" , title : "Exilirs" },
-        { id: uuidv4() , href : "#" , title : "Cleanses" },
-        { id: uuidv4() , href : "#" , title : "Kits" },
-        { id: uuidv4() , href : "#" , title : "Services" },
+        { id: uuidv4() , title : "Juices" },
+        { id: uuidv4() , title : "Teas" },
+        { id: uuidv4() , title : "Exilirs" },
+        { id: uuidv4() , title : "Cleanses" },
+        { id: uuidv4() , title : "Kits" },
+        { id: uuidv4() , title : "Services" },
     ],
 
     main : {

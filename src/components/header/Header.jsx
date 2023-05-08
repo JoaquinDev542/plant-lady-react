@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 export const Header = () => {
     return (
-        <header className="Header">
+        <header className="Header" id="Header">
             <a href="#" title="Start a cleanse today!" className="Header-sub">Start a cleanse today!</a>
             <div className="Header-container">
                 <div className="Header-width">

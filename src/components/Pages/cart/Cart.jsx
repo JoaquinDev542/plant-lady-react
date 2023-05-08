@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom"
 import { Title } from "../../title/Title"
+import "./cart.scss"
 
 export const CartPage= () => {
     return(
@@ -18,10 +19,3 @@ const EmptyContent = () => {
         </div>
     )
 } 
-
-const ZipCode = () => {
-    return (
-        <p>completar</p>
-    )
-}
-

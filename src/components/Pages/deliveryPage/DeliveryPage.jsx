@@ -1,4 +1,5 @@
 import { Title } from "../../title/Title"
+import "./deliveryPage.scss"
 
 export const DeliveryPage = () => {
     return(
@@ -10,15 +11,16 @@ export const DeliveryPage = () => {
     )
 } 
 
-
 const FirstInformation = () => {
     return (
         <div className="FirstInformation">
-            <section className="FirstInformation-text">
-                <h2 className="FirstInformation-h2">We produce in small batches...</h2>
-                <p className="FirstInformation-p">For the time being, Plant Lady Juice Co. will accept a maximum of 50 orders per week. The minimum order amount is $30. As you support our growing business, we will be able to fulfill more orders!</p>
-            </section>
-            <img src="../../assets/juice.webp" alt="Img juice" className="FirstInformation-img" />
+            <div className="FirstInformation-container">
+                <section className="FirstInformation-text">
+                    <h2 className="FirstInformation-h2">We produce in small batches...</h2>
+                    <p className="FirstInformation-p">For the time being, Plant Lady Juice Co. will accept a maximum of 50 orders per week. The minimum order amount is $30. As you support our growing business, we will be able to fulfill more orders!</p>
+                </section>
+                <img src="../../assets/juice.webp" alt="Img juice" className="FirstInformation-img" />
+            </div>
         </div>
     )
 }
