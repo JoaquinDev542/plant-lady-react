@@ -7,8 +7,13 @@
     &-img {
         display: block;
         width: 100%;
+        // max-width: 413.61px;
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
+        // min-width: 413.61px ;
+        // @media screen and (min-width:1350px){
+            // width: 413.61px;
+        // }
     }
     &-content {
         display: flex;

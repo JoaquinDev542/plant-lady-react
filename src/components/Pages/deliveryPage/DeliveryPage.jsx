@@ -2,6 +2,7 @@ import { Title } from "../../title/Title"
 import "./deliveryPage.scss"
 import { LazyLoadImage } from "react-lazy-load-image-component"
 import 'react-lazy-load-image-component/src/effects/blur.css';
+
 export const DeliveryPage = () => {
     return(
         <div className="DeliveryPage">

@@ -23,7 +23,7 @@ const Cards = () => {
         <div className="Products-cards">
             { products.map ( ( { id , title , btn , src } ) => 
                 <div key={ id } className="Products-card">
-                    <LazyLoadImage src={ src } alt={ title } className="Products-img" />
+                        <LazyLoadImage src={ src } alt={ title } className="Products-img" />
                     <div className="Products-padding">
                         <span className="Products-title"> { title } </span>
                         <Buttons href="#" className="Products-link" text="Shop Now" title="Shop Now"/>

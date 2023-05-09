@@ -15,7 +15,7 @@ const EmptyContent = () => {
     return (
         <div className="EmptyContent">
             <p className="EmptyContent-p">Your cart is currently empty.</p>
-            <Link to="/products" className="EmptyContent-link">Continue browsing</Link>
+            <Link to="/collections" className="EmptyContent-link">Continue browsing</Link>
         </div>
     )
 } 
