@@ -1,0 +1,16 @@
+.Juices {
+    &-container {
+        display: grid;
+        // grid-template-columns: repeat(2 , 1fr);
+        gap: clamp(1rem , 5vw , 1.85rem);
+        padding: 2rem var(--padding-h);
+        max-width: 1300px;
+        margin: 0 auto;
+        @media screen and (min-width:600px){
+            grid-template-columns: repeat(2 , 1fr);
+        }
+        @media screen and (min-width:768px){
+            grid-template-columns: repeat(3 , 1fr);
+        }
+    }
+}

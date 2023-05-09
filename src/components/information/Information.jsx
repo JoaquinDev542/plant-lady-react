@@ -1,4 +1,7 @@
 import { Link } from "react-router-dom"
+import { LazyLoadImage } from "react-lazy-load-image-component"
+import 'react-lazy-load-image-component/src/effects/blur.css';
+
 export const Information = ({classDiv ,classSection , classH2 , textH2 , classP , textP , src , classImg , classA , textA , href}) => {
     const stylesInformation = {
         div : {
@@ -37,7 +40,7 @@ export const Information = ({classDiv ,classSection , classH2 , textH2 , classP 
                 <p className={classP}>{textP}</p>
                 <Link style={stylesInformation.a} to={ href } title={ textA } className={ classA }>{ textA }</Link>
             </section>
-            <img style={stylesInformation.img} className={ classImg } src={ src } alt={ textH2 }/>
+            <LazyLoadImage effect="blur" style={stylesInformation.img} className={ classImg } src={ src } alt={ textH2 }/>
         </div>
     )
 }

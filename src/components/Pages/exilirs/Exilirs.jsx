@@ -1,6 +1,8 @@
 import { useContext } from "react";
 import { GlobalContext } from "../../../provider/Provider";
 import { TitleContent } from "../../titleContent/TitleContent"
+import "./exilirs.scss"
+import { CardProduct } from "../../cardProducts/CardProducts";
 
 export const Exilirs = () => {
     const { titleContent } = useContext(GlobalContext)
@@ -8,6 +10,12 @@ export const Exilirs = () => {
     const { h2 , p } = exilirs
 
     return(
-        <TitleContent textH2={ h2 } textP={ p }/>    
+        <div className="Exilirs">
+            <TitleContent textH2={ h2 } textP={ p }/>    
+            <div className="Exilirs-container">
+                <CardProduct href="#" src="../../assets/products/immunity-boost.webp" number="From $10" title="Immunity Boost" btn="Add to Cart"/>
+                <CardProduct href="#" src="../../assets/products/tumeric-juice.webp" number="$7.00" title="Tumeric Juice" btn="Add to Cart"/>
+            </div>
+        </div>
     )
 } 

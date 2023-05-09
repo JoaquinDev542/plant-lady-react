@@ -1,6 +1,7 @@
 import { Title } from "../../title/Title"
 import "./deliveryPage.scss"
-
+import { LazyLoadImage } from "react-lazy-load-image-component"
+import 'react-lazy-load-image-component/src/effects/blur.css';
 export const DeliveryPage = () => {
     return(
         <div className="DeliveryPage">
@@ -19,7 +20,7 @@ const FirstInformation = () => {
                     <h2 className="FirstInformation-h2">We produce in small batches...</h2>
                     <p className="FirstInformation-p">For the time being, Plant Lady Juice Co. will accept a maximum of 50 orders per week. The minimum order amount is $30. As you support our growing business, we will be able to fulfill more orders!</p>
                 </section>
-                <img src="../../assets/juice.webp" alt="Img juice" className="FirstInformation-img" />
+                <LazyLoadImage effect="blur" src="../../assets/juice.webp" alt="Img juice" className="FirstInformation-img" />
             </div>
         </div>
     )
