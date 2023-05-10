@@ -1,6 +1,8 @@
 import { useContext } from "react"
 import { GlobalContext } from "../../../provider/Provider"
 import { Title } from "../../title/Title"
+import { LazyLoadImage } from "react-lazy-load-image-component"
+import 'react-lazy-load-image-component/src/effects/blur.css';
 import "./aboutUs.scss"
 
 export const AboutUs = () => {
@@ -20,7 +22,7 @@ export const AboutUs = () => {
 const Story = () => {
     return (
         <div className="Story">
-            <img src="../../assets/story.webp" alt="Img Plant Lady Juice Co" className="Story-img" />
+            <LazyLoadImage effect="blur" src="../../assets/story.webp" alt="Img Plant Lady Juice Co" className="Story-img" />
             <section className="Story-text">
                 <h3 className="Story-h3">Plant Lady Juice Co.</h3>
                 <p className="Story-p">Plant Lady Juice Co. sprouted from an aligned meeting at a local organic store between it`s founders Akilah Cherri and Jennifer Kanyange. Jennifer told Akilah about her aspirations to start a thriving urban food garden in her West Atlanta home, and the friendship bloomed from there.</p>
@@ -44,7 +46,7 @@ const PersonInformation = () => {
                         <strong className="PersonInformationContainer-work">{ work }</strong>
                         <p className="PersonInformationContainer-p"><strong className="PersonInformationContainer-strong">{ name }</strong>{ paragraph }</p>
                     </section>
-                    <img src={ src } alt={ name } className="PersonInformationContainer-img" />
+                    <LazyLoadImage effect="blur" src={ src } alt={ name } className="PersonInformationContainer-img" />
                 </div> 
             ) }
         </div>
@@ -65,7 +67,7 @@ const WhyWeExist = () => {
                     <li className="WhyWeExist-li">Creativity cultivates community</li>
                 </ul>
             </section>
-            <img src="../../assets/whyWeExist.webp" alt="Why We Exist img" className="WhyWeExist-img" />
+            <LazyLoadImage effect="blur" src="../../assets/whyWeExist.webp" alt="Why We Exist img" className="WhyWeExist-img" />
         </div>
     )
 }

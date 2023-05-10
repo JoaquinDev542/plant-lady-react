@@ -1,0 +1,17 @@
+.Buttons {
+    &-btn {
+        position: relative;
+        display: inline-block;
+        width: max-content;
+        padding: .75rem 2rem;
+        border-radius: 1.25rem;
+        text-decoration: none;
+        color: var(--white);
+        background-color: var(--black);
+        transition: .3s background-color;
+        margin: 0 auto;
+        &:hover {
+            background-color: var(--black-hover);
+        }
+    }
+}

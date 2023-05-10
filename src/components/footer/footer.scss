@@ -34,6 +34,12 @@
         padding: .75rem 1.5rem;
         border-radius: 0.3125rem;
         border: 2px solid var(--line);
+        transition: .3s outline;
+        outline: 2px solid transparent;
+        &:focus {
+            outline: 2px solid var(--green);
+            border: 2px solid transparent;
+        }
     }
     &-button {
         display: block;
@@ -67,5 +73,9 @@
     }
     &-a {
         color: inherit;
+        transition: .3s color;
+        &:hover {
+            color: var(--green);
+        }
     }
 }

@@ -1,4 +1,5 @@
 @use "../../../sass/variables";
+
 .EmptyContent {
     display: grid;
     gap: 1rem;
@@ -13,7 +14,25 @@
         border-radius : 1.25rem;
         text-decoration: none;
         color: #f2f6f2;
-        background-color: #1d1d1d;
+        background-color: var(--black);
         transition: .2s background-color;
+        transition: .3s background-color , .3s color;
+        &:hover {
+            background-color: var(--black-hover);
+            color: var(--white);
+        }
+    }
+}
+
+.ZipCode {
+    &-form {
+    }
+    &-input {
+    }
+    &-btn {
+
+    }
+    &-svg {
+
     }
 }

@@ -5,9 +5,9 @@ export const ProductInformation = () => {
             <div className="ProductInformation-container">
                 <section className="ProductInformation-basicInformation">
                     <span className="ProductInformation-span">Plant Lady Juice Co.</span>
-                    <h2 className="ProductInformation-h2"></h2>
-                    <span className="ProductInformation-number"></span>
-                    <span className="ProductInformation-oz"></span>
+                    <h2 className="ProductInformation-h2">Taste of Sunshine</h2>
+                    <span className="ProductInformation-number">$12.00</span>
+                    <span className="ProductInformation-oz">160z</span>
                 </section>
                 <div className="ProductInformation-information">
                     <div className="ProductInformation-add">

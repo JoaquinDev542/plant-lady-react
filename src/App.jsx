@@ -24,17 +24,17 @@ function App() {
       <BrowserRouter>
         <Header/>
         <Routes>
-          <Route path="plant-lady-react/" element={ <Home/> }/>
-          <Route path="plant-lady-react/about" element={ <AboutUs/> }/>
-          <Route path="plant-lady-react/cleanses" element={ <Cleanses/> }/>
-          <Route path="plant-lady-react/collections" element={ <Collections/> }/>
-          <Route path="plant-lady-react/delivery" element={ <DeliveryPage/> }/>
-          <Route path="plant-lady-react/exilirs" element={ <Exilirs/> }/>
-          <Route path="plant-lady-react/juices" element={ <Juices/> }/>
-          <Route path="plant-lady-react/kits" element={ <Kits/> }/>
-          <Route path="plant-lady-react/services" element={ <Services/> }/>
-          <Route path="plant-lady-react/teas" element={ <Teas/> }/>
-          <Route path="plant-lady-react/cart" element={ <CartPage/> }/>
+          <Route path="/" element={ <Home/> }/>
+          <Route path="/about" element={ <AboutUs/> }/>
+          <Route path="/cleanses" element={ <Cleanses/> }/>
+          <Route path="/collections" element={ <Collections/> }/>
+          <Route path="/delivery" element={ <DeliveryPage/> }/>
+          <Route path="/exilirs" element={ <Exilirs/> }/>
+          <Route path="/juices" element={ <Juices/> }/>
+          <Route path="/kits" element={ <Kits/> }/>
+          <Route path="/services" element={ <Services/> }/>
+          <Route path="/teas" element={ <Teas/> }/>
+          <Route path="/cart" element={ <CartPage/> }/>
           <Route path="*" element={ <NotFound/> }/>
         </Routes>
       </BrowserRouter>
