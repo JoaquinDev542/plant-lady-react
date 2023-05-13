@@ -35,7 +35,7 @@ const Hamburger = () => {
 
 const Logo = () => {
     return (
-        <h1 className="Header-h1"><Link to="/" className="Header-link"><img src="./assets/brand/logo.webp" alt="PLANT LADY JUICE CO." className="Header-logo" /></Link></h1>
+        <h1 className="Header-h1"><Link to="/" className="Header-link"><img src="../assets/brand/logo.webp" alt="PLANT LADY JUICE CO." className="Header-logo" /></Link></h1>
     )
 }
 

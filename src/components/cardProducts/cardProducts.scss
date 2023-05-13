@@ -6,6 +6,7 @@
         display: block;
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
+        // transition: .3s transform;
     }
     &-img {
         display: block;
@@ -13,13 +14,7 @@
         height: 100%;
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
-        transition: .3s transform;
-        // width: 413.61px;
-        // width: 551.09px;
-        // min-width: 413.61px ;
-        // @media screen and (min-width:1225px){
-            // width: 413.61px;
-        // }
+        // transition: .3s transform;
     }
     &-content {
         display: flex;
@@ -54,7 +49,10 @@
     }
 }
 
+.CardProducts-link span {
+    display: block !important;
+}
+
 .CardProducts-link:hover .CardProducts-img {
     transform: scale(1.10);
 }
-
