@@ -1,39 +1,58 @@
+import { Buttons } from "../buttons/Buttons"
 import "./productInformation.scss"
+import { LazyLoadImage } from "react-lazy-load-image-component"
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 export const ProductInformation = ( { img , title , price , oz , subtitle , secondP , thirdP , fourthP , fifthP} ) => {
     return (
-        <div className="ProductInformation">
-            <img src={ img } alt={ title } className="ProductInformation-img" />
-            <div className="ProductInformation-container">
-                <section className="ProductInformation-basicInformation">
-                    <span className="ProductInformation-span">Plant Lady Juice Co.</span>
-                    <h2 className="ProductInformation-h2">{ title }</h2>
-                    <span className="ProductInformation-number">{ price }</span>
-                    <span className="ProductInformation-oz">{ oz }</span>
-                </section>
-                <div className="ProductInformation-information">
-                    <div className="ProductInformation-add">
-                        {/* COMPLETAR */}
+        <>
+            <div className="ProductInformation">
+                <LazyLoadImage effect="blur" src={ img } alt={ title } className="ProductInformation-img" />
+                <div className="ProductInformation-container">
+                    <section className="ProductInformation-basicInformation">
+                        <span className="ProductInformation-span">Plant Lady Juice Co.</span>
+                        <h2 className="ProductInformation-h2">{ title }</h2>
+                        <span className="ProductInformation-number">{ price }</span>
+                        <span className="ProductInformation-oz">{ oz }</span>
+                    </section>
+                    <div className="ProductInformation-information">
+                        <div className="ProductInformation-add">
+                            <div className="ProductInformation-counter">
+                                <button className="ProductInformation-btn" >
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="ProductInformation-svg ProductInformation-svg--dash" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M2 8a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11A.5.5 0 0 1 2 8Z"/>
+                                    </svg>
+                                </button>
+                                <form className="ProductInformation-form">
+                                    <input min="1" value="1" type="number" className="ProductInformation-input" />
+                                </form>
+                                <button className="ProductInformation-btn" >
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="ProductInformation-svg ProductInformation-svg--plus" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z"/>
+                                    </svg>
+                                </button>
+                            </div>
+                            <Buttons title="Add to Cart" href="/cart" text="Add to Cart"/>
+                        </div>
+                        <div className="ProductInformation-content">
+                            <p className="ProductInformation-p">Pay in 4 interest-free installments for orders over $50.00 with Paypal</p>
+                            <strong className="ProductInformation-subtitle">{ subtitle }</strong>
+                            <p className="ProductInformation-p">{ secondP }</p>
+                            <h3 className="ProductInformation-h3">Health Benefits</h3>
+                            <p className="ProductInformation-p">{ thirdP }</p>
+                            <p className="ProductInformation-p">{ fourthP }</p>
+                            <h3 className="ProductInformation-h3">Ingredients</h3>
+                            <p className="ProductInformation-p">{ fifthP }</p>
+                        </div>
+                        <SocialMedia/>
                     </div>
-                    <div className="ProductInformation-content">
-                        <p className="ProductInformation-p">Pay in 4 interest-free installments for orders over $50.00 with Paypal</p>
-                        <strong className="ProductInformation-subtitle">{ subtitle }</strong>
-                        <p className="ProductInformation-p">{ secondP }</p>
-                        <h3 className="ProductInformation-h3">Health Benefits</h3>
-                        <p className="ProductInformation-p">{ thirdP }</p>
-                        <p className="ProductInformation-p">{ fourthP }</p>
-                        <h3 className="ProductInformation-h3">Ingredients</h3>
-                        <p className="ProductInformation-p">{ fifthP }</p>
-                    </div>
-                    <SocialMedia/>
                 </div>
             </div>
-        </div>
-        
+        </>
     )
 }
 
-const SocialMedia = () => {
+export const SocialMedia = () => {
     return (
         <div className="SocialMedia">
             <h3 className="SocialMedia-h3">Share</h3>
