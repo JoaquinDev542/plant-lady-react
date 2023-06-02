@@ -48,10 +48,10 @@ const bbdd = {
     ],
 
     aside : [
-        { id : uuidv4() , title : "Guided by ancestral wisdom" , src : "./assets/guided.avif" , classNames : "First" },
-        { id : uuidv4() , title : "Handcraft with love" , src : "./assets/handcrafted.avif" , classNames : "Second" },
-        { id : uuidv4() , title : "Real ingredients & people" , src : "./assets/real.avif" , classNames : "Third" },
-        { id : uuidv4() , title : "Locally sourced & proudly served" , src : "./assets/locally.avif" , classNames : "Fourth" },
+        { id : uuidv4() , title : "Guided by ancestral wisdom" , src : "././assets/guided.avif" , classNames : "First" },
+        { id : uuidv4() , title : "Handcraft with love" , src : "././assets/handcrafted.avif" , classNames : "Second" },
+        { id : uuidv4() , title : "Real ingredients & people" , src : "././assets/real.avif" , classNames : "Third" },
+        { id : uuidv4() , title : "Locally sourced & proudly served" , src : "././assets/locally.avif" , classNames : "Fourth" },
     ],
 
     footer : [
