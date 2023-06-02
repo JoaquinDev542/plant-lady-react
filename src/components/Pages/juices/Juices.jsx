@@ -13,11 +13,11 @@ export const Juices = () => {
         <div className="Juices">
             <TitleContent textH2={ h2 } textP={ p }/>  
             <div className="Juices-container">
-                <CardProduct href="/Collections/Taste-Of-Sunshine" src="../../assets/products/taste-of-sunshine.webp" number="$12.00" title="Taste of Sunshine" btn="Add to Cart"/>
-                <CardProduct href="/Collections/Green-Apple-Spice" src="../../assets/products/green-apple-spice.webp" number="$12.00" title="Green Apple Spice" btn="Add to Cart"/>
-                <CardProduct href="/Collections/The-Morning-Flush" src="../../assets/products/morning-flush.webp" number="$12.00" title="the Morning Flush" btn="Add to Cart"/>
-                <CardProduct href="/Collections/Cucumber-Lemonade" src="../../assets/products/cucumber-lemonade.webp" number="$12.00" title="Cucumber Lemonade" btn="Add to Cart"/>
-                <CardProduct href="/Collections/Blood-Cleansed" src="../../assets/products/blood-cleanse.webp" number="$12.00" title="Blood Cleansed" btn="Add to Cart"/>
+                <CardProduct href="/Collections/Taste-Of-Sunshine" src="./assets/products/taste-of-sunshine.webp" number="$12.00" title="Taste of Sunshine" btn="Add to Cart"/>
+                <CardProduct href="/Collections/Green-Apple-Spice" src="./assets/products/green-apple-spice.webp" number="$12.00" title="Green Apple Spice" btn="Add to Cart"/>
+                <CardProduct href="/Collections/The-Morning-Flush" src="./assets/products/morning-flush.webp" number="$12.00" title="the Morning Flush" btn="Add to Cart"/>
+                <CardProduct href="/Collections/Cucumber-Lemonade" src="./assets/products/cucumber-lemonade.webp" number="$12.00" title="Cucumber Lemonade" btn="Add to Cart"/>
+                <CardProduct href="/Collections/Blood-Cleansed" src="./assets/products/blood-cleanse.webp" number="$12.00" title="Blood Cleansed" btn="Add to Cart"/>
             </div>
         </div> 
     )
