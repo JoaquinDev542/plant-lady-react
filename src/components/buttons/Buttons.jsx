@@ -1,8 +1,9 @@
+import { Link } from "react-router-dom"
 import "./buttons.scss"
 
 export const Buttons = ({ href , text}) => {
     return (
-        <a className="Buttons-btn" title={ text } href={ href } >{ text }</a>
+        <Link className="Buttons-btn" title={ text } href={ href } >{ text }</Link>
     )
 }
 
