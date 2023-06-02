@@ -57,7 +57,7 @@ const ShoppingCartProducts = () => {
 const ShoppingCartMobileProduct = () => {
     return (
         <div className="ShoppingCartMobileProduct">
-            <LazyLoadImage effect="blur" src="../assets/products/blood-cleanse.webp" alt="" className="ShoppingCartMobileProduct-img" />
+            <LazyLoadImage effect="blur" src="./assets/products/blood-cleanse.webp" alt="" className="ShoppingCartMobileProduct-img" />
             <div className="ShoppingCartMobileProduct-container">
                 <span className="ShoppingCartMobileProduct-price">$12.00</span>
                 <strong className="ShoppingCartMobileProduct-title">Blood Cleansed</strong>
@@ -77,7 +77,7 @@ const ShoppingCartPortatilProduct = () => {
             </div>
             <div className="ShoppingCartPortatilProduct-info">
                 <div className="ShoppingCartPortatilProduct-contentProduct">
-                    <LazyLoadImage effect="blur" src="../assets/products/blood-cleanse.webp" alt="" className="ShoppingCartPortatilProduct-img" />
+                    <LazyLoadImage effect="blur" src="./assets/products/blood-cleanse.webp" alt="" className="ShoppingCartPortatilProduct-img" />
                     <div className="ShoppingCartPortatilProduct-container">
                         <span className="ShoppingCartPortatilProduct-price">$12.00</span>
                         <div className="ShoppingCartPortatilProduct-title">Blood Cleansed</div>
