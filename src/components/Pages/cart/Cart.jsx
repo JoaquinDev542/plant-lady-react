@@ -9,7 +9,7 @@ export const CartPage= () => {
         <div className="CartPage">
             <div className="CartPage-content">
                 <Title textH2="Shopping Cart"/>
-                {/* <EmptyContent/> */}
+                <EmptyContent/>
                 <ZipCode/>
                 <ShoppingCartProducts/>
             </div>
