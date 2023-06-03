@@ -22,7 +22,7 @@ export const AboutUs = () => {
 const Story = () => {
     return (
         <div className="Story">
-            <LazyLoadImage effect="blur" src="../../assets/story.webp" alt="Img Plant Lady Juice Co" className="Story-img" />
+            <LazyLoadImage effect="blur" src="./assets/story.webp" alt="Img Plant Lady Juice Co" className="Story-img" />
             <section className="Story-text">
                 <h3 className="Story-h3">Plant Lady Juice Co.</h3>
                 <p className="Story-p">Plant Lady Juice Co. sprouted from an aligned meeting at a local organic store between it`s founders Akilah Cherri and Jennifer Kanyange. Jennifer told Akilah about her aspirations to start a thriving urban food garden in her West Atlanta home, and the friendship bloomed from there.</p>
@@ -67,7 +67,7 @@ const WhyWeExist = () => {
                     <li className="WhyWeExist-li">Creativity cultivates community</li>
                 </ul>
             </section>
-            <LazyLoadImage effect="blur" src="../../assets/whyWeExist.webp" alt="Why We Exist img" className="WhyWeExist-img" />
+            <LazyLoadImage effect="blur" src="./assets/whyWeExist.webp" alt="Why We Exist img" className="WhyWeExist-img" />
         </div>
     )
 }
