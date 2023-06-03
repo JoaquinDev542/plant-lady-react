@@ -1,8 +1,13 @@
 @use "../../sass/variables";
 
 .Header {
-    display: flex;
+    background-color: var(--white);
     flex-direction: column;
+    position: sticky;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 50;
     gap: 1rem;
     @media screen and (min-width:1024px){
         gap: 1.5rem;

@@ -3,6 +3,7 @@ import { GlobalContext } from "../../../provider/Provider";
 import { TitleContent } from "../../titleContent/TitleContent"
 import { CardProduct } from "../../cardProducts/CardProducts";
 import "./kits.scss"
+
 export const Kits = () => {
     const { titleContent } = useContext(GlobalContext)
     const { kits } = titleContent
