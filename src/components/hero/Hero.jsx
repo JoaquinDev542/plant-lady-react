@@ -10,7 +10,7 @@ export const Hero = () => {
 
     return (
         <div className="Hero">
-            <Information classDiv="Hero-width" classSection="Hero-section" classH2="Hero-h2" textH2={ title } classP="Hero-p" textP={ paragraph } src="./assets/hero.webp" classImg="Hero-img" classA="Hero-a" href="/plant-lady-react/about" textA="Shop Now" />
+            <Information classDiv="Hero-width" classSection="Hero-section" classH2="Hero-h2" textH2={ title } classP="Hero-p" textP={ paragraph } src="./assets/hero.webp" classImg="Hero-img" classA="Hero-a" to="/about" textA="Shop Now" />
         </div>
     )
 }

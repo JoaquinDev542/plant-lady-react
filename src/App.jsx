@@ -42,7 +42,7 @@ function App() {
         <Header/>
         <Routes>
           <Route path="/plant-lady-react/" element={ <Home/> }/>
-          <Route path="/plant-lady-react/about" element={ <AboutUs/> }/>
+          <Route path="/about" element={ <AboutUs/> }/>
           <Route path="/cleanses" element={ <Cleanses/> }/>
           <Route path="/collections" element={ <Collections/> }/>
           <Route path="/collections/Blood-Cleansed" element={<BloodCleansed/>}/>

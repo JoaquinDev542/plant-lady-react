@@ -3,7 +3,7 @@ import "./buttons.scss"
 
 export const Buttons = ({ href , text }) => {
     return (
-        <Link className="Buttons-btn" title={ text } href={ href } >{ text }</Link>
+        <Link className="Buttons-btn" title={ text } to={ href } >{ text }</Link>
     )
 }
 
