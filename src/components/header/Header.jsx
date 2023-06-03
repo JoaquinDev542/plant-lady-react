@@ -55,9 +55,9 @@ const Nav = () => {
     return (
         <nav className="Header-nav">
             <ul className="Header-ul">
-                { header.map( ( { id , title } ) =>
+                { header.map( ( { id , title , href} ) =>
                     <li key={ id } className="Header-li">
-                        <Link to={ title }className="Header-link"> { title } </Link>
+                        <Link to={ href }className="Header-link"> { title } </Link>
                     </li>
                 ) }
             </ul>
