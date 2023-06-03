@@ -42,36 +42,36 @@ function App() {
         <Header/>
         <Routes>
           <Route path="/plant-lady-react" element={ <Home/> }/>
-          <Route path="/about" element={ <AboutUs/> }/>
-          <Route path="/cleanses" element={ <Cleanses/> }/>
-          <Route path="/collections" element={ <Collections/> }/>
-          <Route path="/collections/Blood-Cleansed" element={<BloodCleansed/>}/>
-          <Route path="/collections/Green-Apple-Spice" element={<GreenAppleSpice/>}/>
-          <Route path="/collections/Juice-Kit" element={<JuiceKit/>}/>
-          <Route path="/collections/The-Morning-Flush" element={<TheMorningFlush/>}/>
-          <Route path="/collections/Cucumber-Lemonade" element={<CucumberLemonade/>}/>
-          <Route path="/collections/Slim-And-Trim-Cleanse" element={<SlimAndTrimCleanse/>}/>
-          <Route path="/collections/Sorrel" element={<Sorrel/>}/>
-          <Route path="/collections/Feminine-Power" element={<FemininePower/>}/>
-          <Route path="/collections/Taste-Of-Delight" element={<TasteOfDelight/>}/>
-          <Route path="/collections/Taste-Of-Sunshine" element={<TasteOfSunshine/>}/>
-          <Route path="/collections/Immnunity-Boost" element={<ImmunityBoost/>}/>
-          <Route path="/collections/Tea-Kit" element={<TeaKit/>}/>
-          <Route path="/collections/Tumeric-Juice" element={<TumericJuice/>}/>
-          <Route path="/collections/The-Morning-Flush-Cleanse" element={<TheMorningFlushCleanse/>}/>
-          <Route path="/collections/Blood-Cleansed-Cleanse" element={<BloodCleansedCleanse/>}/>
-          <Route path="/collections/That-Time-Of-The-Month-Cleanse" element={<ThatTimeOfTheMonthCleanse/>}/>
-          <Route path="/collections/Herbal-Coffee" element={<HerbalCoffee/>}/>
-          <Route path="/collections/Five-Flavor-Herbal-Tea" element={<FiveFlavorHerbalTea/>}/>
-          <Route path="/collections/Super-Green-Tea" element={<SuperGreenTea/>}/>
-          <Route path="/delivery" element={ <DeliveryPage/> }/>
-          <Route path="/exilirs" element={ <Exilirs/> }/>
-          <Route path="/juices" element={ <Juices/> }/>
-          <Route path="/kits" element={ <Kits/> }/>
-          <Route path="/services" element={ <Services/> }/>
-          <Route path="/teas" element={ <Teas/> }/>
-          <Route path="/cart" element={ <CartPage/> }/>
-          <Route path="*" element={ <NotFound/> }/>
+          <Route path="/plant-lady-react/about" element={ <AboutUs/> }/>
+          <Route path="/plant-lady-react/cleanses" element={ <Cleanses/> }/>
+          <Route path="/plant-lady-react/collections" element={ <Collections/> }/>
+          <Route path="/plant-lady-react/collections/Blood-Cleansed" element={<BloodCleansed/>}/>
+          <Route path="/plant-lady-react/collections/Green-Apple-Spice" element={<GreenAppleSpice/>}/>
+          <Route path="/plant-lady-react/collections/Juice-Kit" element={<JuiceKit/>}/>
+          <Route path="/plant-lady-react/collections/The-Morning-Flush" element={<TheMorningFlush/>}/>
+          <Route path="/plant-lady-react/collections/Cucumber-Lemonade" element={<CucumberLemonade/>}/>
+          <Route path="/plant-lady-react/collections/Slim-And-Trim-Cleanse" element={<SlimAndTrimCleanse/>}/>
+          <Route path="/plant-lady-react/collections/Sorrel" element={<Sorrel/>}/>
+          <Route path="/plant-lady-react/collections/Feminine-Power" element={<FemininePower/>}/>
+          <Route path="/plant-lady-react/collections/Taste-Of-Delight" element={<TasteOfDelight/>}/>
+          <Route path="/plant-lady-react/collections/Taste-Of-Sunshine" element={<TasteOfSunshine/>}/>
+          <Route path="/plant-lady-react/collections/Immnunity-Boost" element={<ImmunityBoost/>}/>
+          <Route path="/plant-lady-react/collections/Tea-Kit" element={<TeaKit/>}/>
+          <Route path="/plant-lady-react/collections/Tumeric-Juice" element={<TumericJuice/>}/>
+          <Route path="/plant-lady-react/collections/The-Morning-Flush-Cleanse" element={<TheMorningFlushCleanse/>}/>
+          <Route path="/plant-lady-react/collections/Blood-Cleansed-Cleanse" element={<BloodCleansedCleanse/>}/>
+          <Route path="/plant-lady-react/collections/That-Time-Of-The-Month-Cleanse" element={<ThatTimeOfTheMonthCleanse/>}/>
+          <Route path="/plant-lady-react/collections/Herbal-Coffee" element={<HerbalCoffee/>}/>
+          <Route path="/plant-lady-react/collections/Five-Flavor-Herbal-Tea" element={<FiveFlavorHerbalTea/>}/>
+          <Route path="/plant-lady-react/collections/Super-Green-Tea" element={<SuperGreenTea/>}/>
+          <Route path="/plant-lady-react/delivery" element={ <DeliveryPage/> }/>
+          <Route path="/plant-lady-react/exilirs" element={ <Exilirs/> }/>
+          <Route path="/plant-lady-react/juices" element={ <Juices/> }/>
+          <Route path="/plant-lady-react/kits" element={ <Kits/> }/>
+          <Route path="/plant-lady-react/services" element={ <Services/> }/>
+          <Route path="/plant-lady-react/teas" element={ <Teas/> }/>
+          <Route path="/plant-lady-react/cart" element={ <CartPage/> }/>
+          <Route path="/plant-lady-react/*" element={ <NotFound/> }/>
         </Routes>
       </BrowserRouter>
       <Footer/>
