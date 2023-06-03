@@ -41,7 +41,7 @@ function App() {
       <BrowserRouter>
         <Header/>
         <Routes>
-          <Route path="/plant-lady-react/" element={ <Home/> }/>
+          <Route path="/plant-lady-react" element={ <Home/> }/>
           <Route path="/about" element={ <AboutUs/> }/>
           <Route path="/cleanses" element={ <Cleanses/> }/>
           <Route path="/collections" element={ <Collections/> }/>
