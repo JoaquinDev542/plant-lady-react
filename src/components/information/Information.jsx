@@ -1,6 +1,7 @@
 import { LazyLoadImage } from "react-lazy-load-image-component"
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import "./information.scss"
+import { Link } from "react-router-dom";
 
 export const Information = ({classDiv ,classSection , classH2 , textH2 , classP , textP , src , classImg , classA , textA , href}) => {
     const stylesInformation = {
@@ -27,7 +28,7 @@ export const Information = ({classDiv ,classSection , classH2 , textH2 , classP 
             <section style={stylesInformation.section} className={ classSection }>
                 <h2 style={stylesInformation.h2} className={classH2}>{textH2}</h2>
                 <p className={classP}>{textP}</p>
-                <a href={ href } title={ textA } className="Information-btn">{ textA }</a>
+                <Link to={ href } title={ textA } className="Information-btn">{ textA }</Link>
             </section>
             <LazyLoadImage effect="blur" style={stylesInformation.img} className={ classImg } src={ src } alt={ textH2 }/>
         </div>
