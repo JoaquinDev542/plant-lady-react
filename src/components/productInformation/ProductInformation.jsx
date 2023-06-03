@@ -32,7 +32,7 @@ export const ProductInformation = ( { img , title , price , oz , subtitle , seco
                                     </svg>
                                 </button>
                             </div>
-                            <Buttons title="Add to Cart" href="/cart" text="Add to Cart"/>
+                            <Buttons title="Add to Cart" href="/plant-lady-react/cart" text="Add to Cart"/>
                         </div>
                         <div className="ProductInformation-content">
                             <p className="ProductInformation-p">Pay in 4 interest-free installments for orders over $50.00 with Paypal</p>

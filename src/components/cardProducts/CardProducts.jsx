@@ -12,7 +12,7 @@ export const CardProduct = ( {  href , src  , title , number , btn }  ) => {
             <div className="CardProducts-content">
                 <span className="CardProducts-price">{ number }</span>
                 <strong className="CardProducts-name">{ title }</strong>
-                <Link to="/cart" className="CardProducts-btn">{ btn }</Link>
+                <Link to="/plant-lady-react/cart" className="CardProducts-btn">{ btn }</Link>
             </div>
         </div>
     )

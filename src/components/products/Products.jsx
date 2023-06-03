@@ -27,7 +27,7 @@ const Cards = () => {
                     <LazyLoadImage effect="blur" src={ src } alt={ title } className="Products-img" />
                     <div className="Products-padding">
                         <span className="Products-title"> { title } </span>
-                        <Buttons href="/Kits" className="Products-link" text="Shop Now" title="Shop Now"/>
+                        <Buttons href="/plant-lady-react/Kits" className="Products-link" text="Shop Now" title="Shop Now"/>
                     </div>
                 </div>
             ) }
