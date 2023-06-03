@@ -13,8 +13,8 @@ export const Exilirs = () => {
         <div className="Exilirs">
             <TitleContent textH2={ h2 } textP={ p }/>    
             <div className="Exilirs-container">
-                <CardProduct href="/Collections/Immnunity-Boost" src=".././assets/products/immunity-boost.webp" number="From $10" title="Immunity Boost" btn="Add to Cart"/>
-                <CardProduct href="/Collections/Tumeric-Juice" src=".././assets/products/tumeric-juice.webp" number="$7.00" title="Tumeric Juice" btn="Add to Cart"/>
+                <CardProduct href="/Collections/Immnunity-Boost" src="https://joaquindev542.github.io/assets/products/immunity-boost.webp" number="From $10" title="Immunity Boost" btn="Add to Cart"/>
+                <CardProduct href="/Collections/Tumeric-Juice" src="https://joaquindev542.github.io/assets/products/tumeric-juice.webp" number="$7.00" title="Tumeric Juice" btn="Add to Cart"/>
             </div>
         </div>
     )
