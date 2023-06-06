@@ -105,6 +105,10 @@
     }
 }
 
+.ShoppingCartMobileProduct.active {
+    display: none;
+}
+
 .ShoppingCartPortatilProduct {
     max-width: 1300px;
     margin: 0 auto;
@@ -155,6 +159,10 @@
     }
 }
 
+#ShoppingCartPortatilProduct-info {
+    display: none;
+}
+
 .ShoppingCartCounter {
     &-container{
         display: flex;
@@ -163,6 +171,7 @@
     &-btn{
         background-color: transparent;
         border: none;
+        cursor: pointer;
     }
     &-input{
         display: inline;
@@ -171,10 +180,11 @@
         background-color: transparent;
         border: none;
     }
-    &-remove{
-        color: inherit;
-        font-size: clamp(.75rem , 2vw , 1rem);
-    }
+}
+
+.shoppingCartCounter-remove {
+    color: var(--black) !important;
+    font-size: clamp(.75rem , 2vw , 1rem) !important;
 }
 
 .TotalSpendCart {

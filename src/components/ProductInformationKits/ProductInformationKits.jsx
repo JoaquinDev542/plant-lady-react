@@ -7,7 +7,9 @@ export const ProductInformationKits = ( { img , title , price , subtitle , secon
     const [ count , setCount ] = useState(1)
 
     function decrementCount() {
-        setCount(count - 1)
+        if( count != 0 ) {
+            setCount(count - 1)
+        }
     }
 
     function incrementCount() {
@@ -39,7 +41,7 @@ export const ProductInformationKits = ( { img , title , price , subtitle , secon
                                     </svg>
                                 </button>
                             </div>
-                            <Buttons title="Add to Cart" href="/cart" text="Add to Cart"/>
+                            <Buttons title="Add to Cart" href="/plant-lady-react/cart" text="Add to Cart"/>
                         </div>
                         <div className="ProductInformation-content">
                             <p className="ProductInformation-p">Pay in 4 interest-free installments for orders over $50.00 with Paypal</p>

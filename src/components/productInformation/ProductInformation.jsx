@@ -8,7 +8,9 @@ export const ProductInformation = ( { img , title , price , oz , subtitle , seco
     const [ count , setCount] = useState(1)
 
    function decrementCount () {
-        setCount( count - 1 )
+        if( count != 0 ) {
+            setCount(count - 1)
+        }
    }
 
    function incrementCount () {
